@@ -232,6 +232,26 @@
             font-size: 40px;
             margin-bottom: 1rem;
         }
+        
+        /* Contact Section Styles */
+        .contact-section {
+            background-color: #f8f9fa;
+            padding: 4rem 0;
+        }
+        .contact-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+        .contact-icon {
+            font-size: 2.5rem;
+            color: #004d40;
+            margin-bottom: 1rem;
+        }
     </style>
 </head>
 <body>
@@ -254,6 +274,7 @@
                     <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
                     <li class="nav-item"><a class="nav-link" href="#clients">Clients</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
                 </ul>
             </div>
         </div>
@@ -497,8 +518,7 @@
     </section>
 
     <!-- Clients Section -->
-<!-- Clients Section -->
-    <section id="testimonials" class="container py-5">
+    <section id="clients" class="container py-5">
         <h2 class="text-center section-heading">Extravagance ko dikhane mein waqt aur paisa barbaad karne ke bajaye, humne apne space ko aisa design kiya jo har mehmaan ko subtle sophistication ka ehsaas dilaye.</h2>
         
         <div class="clients-grid">
@@ -759,7 +779,6 @@
         </div>
     </section>
 
-
     <!-- About Section -->
     <section id="about" class="container py-5 animate__animated animate__fadeInUp">
         <h2 class="text-center mb-4 text-primary">About Us</h2>
@@ -768,27 +787,57 @@
         </p>
     </section>
 
-  <!-- New WhatsApp Contact Section -->
-<section id="contact" class="whatsapp-contact animate__animated animate__fadeInUp">
-    <i class="bi bi-whatsapp"></i>
-    <h4>Contact us via WhatsApp</h4>
-    <p>Ask us anything w.r.t your dream home 24*7!</p>
-    <a href="https://wa.me/918240946667?text=Welcome%20to%20SK%20Interiors!!%20Please%20let%20us%20know%20you%20queries%20with%20your%20details(Name,%20Mobile%20Number,%20Email%20address)..%20We'll%20assist%20you%20ASAP." target="_blank" class="btn btn-light btn-sm mt-2">Chat Now</a>
-</section>
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-section animate__animated animate__fadeInUp">
+        <div class="container">
+            <h2 class="text-center mb-5 text-primary">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card contact-card">
+                        <div class="card-body text-center p-5">
+                            <i class="bi bi-telephone-fill contact-icon"></i>
+                            <h4 class="mb-3">Get in Touch</h4>
+                            <p class="mb-4">We'd love to hear from you. Reach out to us through any of the following methods:</p>
+                            
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <i class="bi bi-telephone mb-2" style="font-size: 1.5rem; color: #004d40;"></i>
+                                    <h5>Call Us</h5>
+                                    <p>+91 8240946667</p>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <i class="bi bi-envelope mb-2" style="font-size: 1.5rem; color: #004d40;"></i>
+                                    <h5>Email Us</h5>
+                                    <p>Somenathporey@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <p class="mt-4">You can also reach us through WhatsApp for quick responses to your queries.</p>
+                            <a href="https://wa.me/918240946667?text=Welcome%20to%20SK%20Interiors!!%20Please%20let%20us%20know%20you%20queries%20with%20your%20details(Name,%20Mobile%20Number,%20Email%20address)..%20We'll%20assist%20you%20ASAP." target="_blank" class="btn btn-success mt-2">
+                                <i class="bi bi-whatsapp"></i> Chat on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Footer -->
-<footer class="animate__animated animate__fadeInUp">
-    &copy; 2025 S.K Interiors. All rights reserved.
-</footer>
+    <!-- WhatsApp Contact Section -->
+    <section id="whatsapp-contact" class="whatsapp-contact animate__animated animate__fadeInUp">
+        <i class="bi bi-whatsapp"></i>
+        <h4>Contact us via WhatsApp</h4>
+        <p>Ask us anything w.r.t your dream home 24*7!</p>
+        <a href="https://wa.me/918240946667?text=Welcome%20to%20SK%20Interiors!!%20Please%20let%20us%20know%20you%20queries%20with%20your%20details(Name,%20Mobile%20Number,%20Email%20address)..%20We'll%20assist%20you%20ASAP." target="_blank" class="btn btn-light btn-sm mt-2">Chat Now</a>
+    </section>
 
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/918240946667?text=Welcome%20to%20SK%20Interiors!!%20Please%20let%20us%20know%20you%20queries%20with%20your%20details(Name,%20Mobile%20Number,%20Email%20address)..%20We'll%20assist%20you%20ASAP." target="_blank" class="whatsapp-link">
-    <i class="bi bi-whatsapp"></i>
-</a>
-
+    <!-- Footer -->
+    <footer class="animate__animated animate__fadeInUp">
+        &copy; 2025 S.K Interiors. All rights reserved.
+    </footer>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/918240946667" target="_blank" class="whatsapp-link">
+    <a href="https://wa.me/918240946667?text=Welcome%20to%20SK%20Interiors!!%20Please%20let%20us%20know%20you%20queries%20with%20your%20details(Name,%20Mobile%20Number,%20Email%20address)..%20We'll%20assist%20you%20ASAP." target="_blank" class="whatsapp-link">
         <i class="bi bi-whatsapp"></i>
     </a>
 
